@@ -10,7 +10,7 @@ iface = 'eth0'
 filter_exp = 'tcp'
 
 # Use Scapy to capture packets
-pkts = sniff(iface=iface, filter=filter_exp, timeout=15)
+pkts = sniff(iface=iface, filter=filter_exp, timeout=1800)
 
 # Define a list of IP addresses to monitor for suspicious traffic
 monitor_ips = []
